@@ -3,8 +3,13 @@ Name Plug-in : Loading Staggered Stair
 Penulis : Abdi Syahputra Harahap
 Web : https://bungabdi.blogspot.com
 */
-lst(TagID, sizefont, color, time);
+
+animasist();
 function lst(TagID, sizefont, color, time) {
+var TagID = TagID;
+var sizefont = sizefont;
+var color = color;
+var time= time;
 document.getElementById(TagID).innerHTML = `<div id="lb1">
 <div class="loading">Loading</div>
 </div>
