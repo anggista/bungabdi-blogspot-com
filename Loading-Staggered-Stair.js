@@ -3,19 +3,19 @@ Name Plug-in : Loading Staggered Stair
 Penulis : Abdi Syahputra Harahap
 Web : https://bungabdi.blogspot.com
 */
-
+lst(TagID, sizefont, color, time);
 function lst(TagID, sizefont, color, time) {
 document.getElementById(TagID).innerHTML = `<div id="lb1">
-<div class="loading">
-Loading</div>
-</div>`;
+<div class="loading">Loading</div>
+</div>
+`;
 var loading = document.querySelector(".loading");
 var letters = loading.textContent.split("");
 loading.textContent = "";
 letters.forEach(function (letter, i) {
     var span = document.createElement("span");
     span.textContent = letter;
-    span.style.animationDelay = i / +time+ + "s";
+    span.style.animationDelay = (i /time) + "s";
     loading.append(span);
 });
 
