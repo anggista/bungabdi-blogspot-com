@@ -3,14 +3,13 @@ Name Plug-in : Loading Staggered Stair
 Penulis : Abdi Syahputra Harahap
 Web : https://bungabdi.blogspot.com
 */
-
 animasist();
 function lst(TagID, sizefont, color, time) {
 document.getElementById(TagID).innerHTML = `<div id="lb1">
-<div class="loading">Loading</div>
+<div class=`+TagID+`>Loading</div>
 </div>
 `;
-var loading = document.querySelector(".loading");
+var loading = document.querySelector('.'+TagID);
 var letters = loading.textContent.split("");
 loading.textContent = "";
 letters.forEach(function (letter, i) {
@@ -29,14 +28,14 @@ letters.forEach(function (letter, i) {
   margin-top: 5%;
 }
 
-.loading {
+.`+TagID+` {
   display: flex;
   color: white;
   font-size: `+sizefont+`px;
   font-family: Lato, sans-serif;
   text-transform: uppercase;
 }
-.loading span {
+.`+TagID+` span {
   padding: 0 10px;
   line-height: 50px;
   background: `+color+`;
