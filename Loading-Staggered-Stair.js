@@ -6,10 +6,6 @@ Web : https://bungabdi.blogspot.com
 
 animasist();
 function lst(TagID, sizefont, color, time) {
-var TagID = TagID;
-var sizefont = sizefont;
-var color = color;
-var time= time;
 document.getElementById(TagID).innerHTML = `<div id="lb1">
 <div class="loading">Loading</div>
 </div>
